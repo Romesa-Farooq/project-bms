@@ -1,0 +1,7 @@
+<?php include 'header.php'; ?>
+<div class="container-fluid">
+    <div class="page-title-box"><div><div class="eyebrow mb-1"><?= htmlspecialchars($moduleKicker ?? 'BMS module') ?></div><h3 class="mb-1"><?= htmlspecialchars($moduleTitle) ?></h3><p class="text-muted mb-0"><?= htmlspecialchars($moduleDescription ?? 'Manage this employee workflow from the BMS workspace.') ?></p></div><a href="index.php" class="btn btn-light"><i class="bi bi-arrow-left me-1"></i>Back to People</a></div>
+    <?php if (!empty($moduleAlert)): ?><div class="alert alert-info d-flex gap-2 align-items-center"><i class="bi bi-info-circle"></i><?= htmlspecialchars($moduleAlert) ?></div><?php endif; ?>
+    <div class="card"><div class="card-header d-flex justify-content-between align-items-center"><h5 class="card-title mb-0"><?= htmlspecialchars($moduleTableTitle ?? $moduleTitle) ?></h5><button class="btn btn-primary btn-sm"><i class="bi bi-plus-lg me-1"></i>Add New</button></div><div class="card-body"><div class="table-responsive"><table class="table table-hover align-middle mb-0"><thead class="table-light"><tr><?php foreach (($moduleColumns ?? ['Sr No.', 'Name', 'Status', 'Action']) as $column): ?><th><?= htmlspecialchars($column) ?></th><?php endforeach; ?></tr></thead><tbody><?php foreach (($moduleRows ?? [['1', 'No records available', 'Ready', 'View']]) as $row): ?><tr><?php foreach ($row as $cell): ?><td><?= $cell ?></td><?php endforeach; ?></tr><?php endforeach; ?></tbody></table></div></div></div>
+</div>
+<?php include 'footer.php'; ?>
