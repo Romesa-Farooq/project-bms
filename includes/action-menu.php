@@ -1,83 +1,276 @@
 
+<?php
+
+$menuItems = [
+    [
+        'label' => 'Hours Distribution',
+        'icon' => 'bi-layers',
+        'modal' => 'hoursDistributionModal'
+    ],
+    [
+        'label' => 'HR Talk',
+        'icon' => 'bi-broadcast',
+        'modal' => 'hrTalkModal'
+    ],
+    [
+        'label' => 'Blog',
+        'icon' => 'bi-rss',
+        'url' => 'blog.php'
+    ],
+    [
+        'label' => 'Dashboard',
+        'icon' => 'bi-person-circle',
+        'url' => 'dashboard.php'
+    ],
+    [
+        'label' => 'Profile',
+        'icon' => 'bi-person-fill',
+        'url' => 'profile.php'
+    ],
+    [
+        'label' => 'Experience Certificate',
+        'icon' => 'bi-patch-check',
+        'url' => 'experience-certificate.php'
+    ],
+    [
+        'label' => 'Role and Responsibility',
+        'icon' => 'bi-diagram-3',
+        'url' => 'role-responsibility.php'
+    ],
+    [
+        'label' => 'Appointment Letter',
+        'icon' => 'bi-file-earmark-text',
+        'url' => 'appointment-letter.php'
+    ],
+    [
+        'label' => 'Form-A',
+        'icon' => 'bi-chat-square-text',
+        'url' => 'form-a.php'
+    ],
+    [
+        'label' => 'Form-B',
+        'icon' => 'bi-chat-square-text',
+        'url' => 'form-b.php'
+    ],
+    [
+        'label' => '1 (Certs)',
+        'icon' => 'bi-chat-square-text',
+        'url' => 'employee-detail.php#certifications'
+    ],
+    [
+        'label' => 'Active',
+        'icon' => 'bi-person-check',
+        'url' => 'employee-detail.php'
+    ],
+    [
+        'label' => 'Statement',
+        'icon' => 'bi-card-text',
+        'url' => 'statement.php'
+    ],
+    [
+        'label' => 'Plans',
+        'icon' => 'bi-layout-text-window-reverse',
+        'url' => 'plans.php'
+    ],
+    [
+        'label' => 'Performance',
+        'icon' => 'bi-graph-up-arrow',
+        'url' => 'performance.php'
+    ],
+    [
+        'label' => 'Demand',
+        'icon' => 'bi-info-circle',
+        'url' => 'demand.php'
+    ],
+    [
+        'label' => 'TimeLive',
+        'icon' => 'bi-card-list',
+        'url' => 'timelive.php'
+    ],
+    [
+        'label' => 'Weekly Performance',
+        'icon' => 'bi-graph-up',
+        'url' => 'weekly-performance.php'
+    ]
+];
+
+$onboardingItems = [
+    [
+        'label' => 'Onboarding Steps',
+        'url' => 'onboarding-steps.php'
+    ],
+    [
+        'label' => 'Orientation Plan',
+        'url' => 'orientation-plan.php'
+    ],
+    [
+        'label' => 'Onboarding Checklist',
+        'url' => 'onboarding-checklist.php'
+    ],
+    [
+        'label' => 'Onboarding Plan',
+        'url' => 'onboarding-plan.php'
+    ]
+];
+
+$offboardingItems = [
+    [
+        'label' => 'Offboarding Reasons',
+        'modal' => 'offboardingReasonsModal'
+    ],
+    [
+        'label' => 'Offboarding Checklist',
+        'url' => 'offboarding-checklist.php'
+    ],
+    [
+        'label' => 'Offboarding Plan',
+        'url' => 'offboarding-plan.php'
+    ]
+];
+
+?>
+
 <div class="dropdown action-dropdown">
-    <button class="btn btn-sm btn-light" type="button"
-            data-bs-toggle="dropdown"
-            data-bs-boundary="viewport"
-            aria-expanded="false">
+
+    <button
+        class="btn btn-sm btn-light"
+        type="button"
+        data-bs-toggle="dropdown"
+        data-bs-boundary="viewport"
+        aria-expanded="false">
+
         <i class="bi bi-three-dots-vertical"></i>
+
     </button>
 
     <ul class="dropdown-menu action-menu">
 
-        <!-- Hours Distribution -->
-        <li>
-            <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#hoursDistributionModal">
-                <i class="bi bi-layers me-2"></i>Hours Distribution
-            </a>
-        </li>
-        <li>
-            <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#hrTalkModal">
-                <i class="bi bi-broadcast me-2"></i>HR Talk
-            </a>
-        </li>
-        <li>
-            <a class="dropdown-item" href="blog.php">
-                <i class="bi bi-rss me-2"></i>Blog
-            </a>
-        </li>
-        <li>
-            <a class="dropdown-item" href="dashboard.php">
-                <i class="bi bi-person-circle me-2"></i>Dashboard
-            </a>
-        </li>
-        <li>
-            <a class="dropdown-item" href="profile.php">
-                <i class="bi bi-person-fill me-2"></i>Profile
-            </a>
-        </li>
-        <li>
-            <a class="dropdown-item" href="experience-certificate.php">
-                <i class="bi bi-patch-check me-2"></i>Experience Certificate
-            </a>
-        </li>
-        <li>
-            <a class="dropdown-item" href="role-responsibility.php">
-                <i class="bi bi-diagram-3 me-2"></i>Role and Responsibility
-            </a>
-        </li>
-        <li><a class="dropdown-item" href="appointment-letter.php"><i class="bi bi-file-earmark-text me-2"></i>Appointment Letter</a></li>
-        <li><a class="dropdown-item" href="form-a.php"><i class="bi bi-chat-square-text me-2"></i>Form-A</a></li>
-        <li><a class="dropdown-item" href="form-b.php"><i class="bi bi-chat-square-text me-2"></i>Form-B</a></li>
-        <li><a class="dropdown-item" href="employee-detail.php#certifications"><i class="bi bi-chat-square-text me-2"></i>1 (Certs)</a></li>
-        <li><a class="dropdown-item" href="employee-detail.php"><i class="bi bi-person-check me-2"></i>Active</a></li>
-        <li><a class="dropdown-item" href="statement.php"><i class="bi bi-card-text me-2"></i>Statement</a></li>
-        <li><a class="dropdown-item" href="plans.php"><i class="bi bi-layout-text-window-reverse me-2"></i>Plans</a></li>
-        <li><a class="dropdown-item" href="performance.php"><i class="bi bi-graph-up-arrow me-2"></i>Performance</a></li>
-        <li><a class="dropdown-item" href="demand.php"><i class="bi bi-info-circle me-2"></i>Demand</a></li>
-        <li><a class="dropdown-item" href="timelive.php"><i class="bi bi-card-list me-2"></i>TimeLive</a></li>
-        <li><a class="dropdown-item" href="weekly-performance.php"><i class="bi bi-graph-up me-2"></i>Weekly Performance</a></li>
+        <?php foreach ($menuItems as $item): ?>
+
+            <li>
+
+                <?php if (isset($item['modal'])): ?>
+
+                    <a
+                        class="dropdown-item"
+                        href="#"
+                        data-bs-toggle="modal"
+                        data-bs-target="#<?= htmlspecialchars($item['modal']) ?>">
+
+                        <i class="bi <?= htmlspecialchars($item['icon']) ?> me-2"></i>
+                        <?= htmlspecialchars($item['label']) ?>
+
+                    </a>
+
+                <?php else: ?>
+
+                    <a
+                        class="dropdown-item"
+                        href="<?= htmlspecialchars($item['url']) ?>">
+
+                        <i class="bi <?= htmlspecialchars($item['icon']) ?> me-2"></i>
+                        <?= htmlspecialchars($item['label']) ?>
+
+                    </a>
+
+                <?php endif; ?>
+
+            </li>
+
+        <?php endforeach; ?>
+
+
+        <!-- Onboarding -->
+
         <li class="dropdown-submenu">
-            <a class="dropdown-item submenu-toggle" href="#">
-                <i class="bi bi-person-plus me-2"></i>Onboarding<i class="bi bi-chevron-right float-end"></i>
+
+            <a
+                class="dropdown-item submenu-toggle"
+                href="#">
+
+                <i class="bi bi-person-plus me-2"></i>
+                Onboarding
+
+                <i class="bi bi-chevron-right float-end"></i>
+
             </a>
+
             <ul class="dropdown-menu submenu">
-                <li><a class="dropdown-item" href="onboarding-steps.php">Onboarding Steps</a></li>
-                <li><a class="dropdown-item" href="orientation-plan.php">Orientation Plan</a></li>
-                <li><a class="dropdown-item" href="onboarding-checklist.php">Onboarding Checklist</a></li>
-                <li><a class="dropdown-item" href="onboarding-plan.php">Onboarding Plan</a></li>
+
+                <?php foreach ($onboardingItems as $item): ?>
+
+                    <li>
+
+                        <a
+                            class="dropdown-item"
+                            href="<?= htmlspecialchars($item['url']) ?>">
+
+                            <?= htmlspecialchars($item['label']) ?>
+
+                        </a>
+
+                    </li>
+
+                <?php endforeach; ?>
+
             </ul>
+
         </li>
+
+
+        <!-- Offboarding -->
+
         <li class="dropdown-submenu">
-            <a class="dropdown-item submenu-toggle" href="#">
-                <i class="bi bi-person-dash me-2"></i>Offboarding<i class="bi bi-chevron-right float-end"></i>
+
+            <a
+                class="dropdown-item submenu-toggle"
+                href="#">
+
+                <i class="bi bi-person-dash me-2"></i>
+                Offboarding
+
+                <i class="bi bi-chevron-right float-end"></i>
+
             </a>
+
             <ul class="dropdown-menu submenu">
-                <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#offboardingReasonsModal">Offboarding Reasons</a></li>
-                <li><a class="dropdown-item" href="offboarding-checklist.php">Offboarding Checklist</a></li>
-                <li><a class="dropdown-item" href="offboarding-plan.php">Offboarding Plan</a></li>
+
+                <?php foreach ($offboardingItems as $item): ?>
+
+                    <li>
+
+                        <?php if (isset($item['modal'])): ?>
+
+                            <a
+                                class="dropdown-item"
+                                href="#"
+                                data-bs-toggle="modal"
+                                data-bs-target="#<?= htmlspecialchars($item['modal']) ?>">
+
+                                <?= htmlspecialchars($item['label']) ?>
+
+                            </a>
+
+                        <?php else: ?>
+
+                            <a
+                                class="dropdown-item"
+                                href="<?= htmlspecialchars($item['url']) ?>">
+
+                                <?= htmlspecialchars($item['label']) ?>
+
+                            </a>
+
+                        <?php endif; ?>
+
+                    </li>
+
+                <?php endforeach; ?>
+
             </ul>
+
         </li>
 
     </ul>
-</div>
 
+</div>
