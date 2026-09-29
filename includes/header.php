@@ -21,9 +21,9 @@ function isActive($page)
 
     <title>SPS-BMS | Human Resource Management</title>
 
-    <link rel="stylesheet" href="/my_sites/bms/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/my_sites/bms/css/app.min.css">
-    <link rel="stylesheet" href="/my_sites/bms/css/custom.min.css">
+    <link rel="stylesheet" href="/my_sites/romesa-farooq-bms/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/my_sites/romesa-farooq-bms/css/app.min.css">
+    <link rel="stylesheet" href="/my_sites/romesa-farooq-bms/css/custom.min.css">
 
     <link
         rel="stylesheet"
@@ -71,7 +71,7 @@ function isActive($page)
     <div class="container-fluid">
 
         <a class="navbar-brand fw-bold d-flex align-items-center gap-2"
-           href="/my_sites/bms/index.php">
+           href="/my_sites/romesa-farooq-bms/index.php">
 
             <span class="bms-brand-mark">
                 <i class="bi bi-grid-1x2-fill"></i>
@@ -98,7 +98,7 @@ function isActive($page)
 
                 <li class="nav-item">
                     <a class="nav-link <?= isActive('index.php'); ?>"
-                       href="/my_sites/bms/index.php">
+                       href="/my_sites/romesa-farooq-bms/index.php">
 
                         <i class="bi bi-people me-1"></i>
                         People
@@ -107,7 +107,7 @@ function isActive($page)
 
                 <li class="nav-item">
                     <a class="nav-link <?= isActive('dashboard.php'); ?>"
-                       href="/my_sites/bms/dashboard.php">
+                       href="/my_sites/romesa-farooq-bms/dashboard.php">
 
                         <i class="bi bi-speedometer2 me-1"></i>
                         Dashboard
@@ -116,7 +116,7 @@ function isActive($page)
 
                 <li class="nav-item">
                     <a class="nav-link <?= isActive('profile.php'); ?>"
-                       href="/my_sites/bms/profile.php">
+                       href="/my_sites/romesa-farooq-bms/profile.php">
 
                         <i class="bi bi-person-badge me-1"></i>
                         Profile
